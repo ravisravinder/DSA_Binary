@@ -34,7 +34,12 @@ class DecimalTOBinary{
         }
         return binary.reverse().toString();
     }
+//Inbuilt function  
+String binary = Integer.toBinaryString(13); // returns "1101"
+
 }
+
+======================================
 
 =======================================================
 
