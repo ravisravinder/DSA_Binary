@@ -14,6 +14,9 @@ public class BinaryToDecimal {
             System.out.println("bit: "+bit+", position: "+position+", value: "+value);
         }
     }
+    //inBuilt function
+    int decimal = Integer.parseInt("1101", 2); // returns 13
+
 }
 
 
