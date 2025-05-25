@@ -16,4 +16,26 @@ public class BinaryToDecimal {
     }
 }
 
+
 =============================================
+class DecimalTOBinary{
+    public static void main(String[] args) {
+        int n=13;  //1101  1+4+8
+        String s = decimalToBinary(n);
+        System.out.println(s);
+    }
+
+    private static String decimalToBinary(int n) {
+        if(n==0) return "0";
+        StringBuilder binary = new StringBuilder();
+        while (n>0){
+            binary.append(n%2); //1,   0  1 1
+            n=n/2; //6  ,3, 1,0
+        }
+        return binary.reverse().toString();
+    }
+}
+
+=======================================================
+
+    
