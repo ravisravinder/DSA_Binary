@@ -1,0 +1,19 @@
+public class BinaryToDecimal {
+    public static void main(String[] args) {
+        String binary = "1001";
+        int decimal = 0;
+        getBinaryToDecimal(binary,decimal);
+    }
+
+    private static void getBinaryToDecimal(String s,int decimal) {
+        for (int i = s.length() - 1; i >= 0; i--) {
+            int bit = s.charAt(i)-'0'; //convert to int
+            int position = s.length()-1-i;   //right most position is 0 right
+            int value = bit*(int) Math.pow(2,position);
+            decimal+=value;
+            System.out.println("bit: "+bit+", position: "+position+", value: "+value);
+        }
+    }
+}
+
+=============================================
